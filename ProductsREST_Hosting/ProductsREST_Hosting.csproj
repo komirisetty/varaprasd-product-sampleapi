@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="WeatherForecast.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WellFargo.Libraries.DataAccess.Impl\WellFargo.Libraries.DataAccess.Impl.csproj" />
+    <ProjectReference Include="..\WellFargo.Libraries.Services.Interfaces\WellFargo.Libraries.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\WellsFargo.Libraries.DataAccess.Interfaces\WellsFargo.Libraries.DataAccess.Interfaces.csproj" />
+    <ProjectReference Include="..\WellsFargo.Libraries.Domain.Interfaces\WellsFargo.Libraries.Domain.Interfaces.csproj" />
+    <ProjectReference Include="..\WellsFargo.Libraries.Domian.Impl\WellsFargo.Libraries.Domian.Impl.csproj" />
+    <ProjectReference Include="..\WellsFargo.Libraries.Hosting.Extensibility\WellsFargo.Libraries.Hosting.Extensibility.csproj" />
+    <ProjectReference Include="..\WellsFargo.Libraries.Models\WellsFargo.Libraries.Models.csproj" />
+    <ProjectReference Include="..\WellsFargo.Libraries.ORM.Impl\WellsFargo.Libraries.ORM.Impl.csproj" />
+    <ProjectReference Include="..\WellsFargo.Libraries.ORM.Interfaces\WellsFargo.Libraries.ORM.Interfaces.csproj" />
+    <ProjectReference Include="..\WellsFargo.Libraries.Services.Impl\WellsFargo.Libraries.Services.Impl.csproj" />
+  </ItemGroup>
+
+
+</Project>
